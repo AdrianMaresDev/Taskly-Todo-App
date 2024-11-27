@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: #9CA3D6;
+    --bg-accent: #D6D7EF;
+    --text-primary: #fff;
+    --text-accent: #000;
+    --bg-white: #fff;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Mulish', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-accent);
+}
+
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    background-color: var(--bg-primary);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.todo-body {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background-color: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--bg-primary);
+    padding-bottom: 1rem;
+}
+
+.todo-body p {
+    color: var(--text-accent);
+    padding-bottom: 1rem;
+}
+
+.button {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #838dd4;
+}
+
+.task-form {
+    position: relative;
+    color: var(--text-accent);
+    padding-top: 2.5rem;
+}
+
+.svg-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.task-form-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.task-form-body label {
+    font-size: 1.2rem;
+}
+
+.form-input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
