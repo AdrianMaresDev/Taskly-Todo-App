@@ -25,16 +25,18 @@
 
     <main>
         <div class="todo-body">
-            <div class="task-header hidden">
+            <div class="task-header">
                 <h2>Task List</h2>
                 <p>Your list is currently empty. Use the button below to add a task:</p>
-                <button type="button" class="button" id="open-form">New Task</button>
+                <button type="button" class="button" id="open-form-button">New Task</button>
             </div>
 
-            <form class="task-form">
-                <div class="task-form-modal">
+            <form class="task-form hidden">
+                
+                <div class="task-form-title">
+                    <h2>New Task</h2>
                     <button class="svg-button" id="close-form-button" type="button" aria-label="close form">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="var(--bg-primary)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="var(--bg-primary)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                     </button>
                 </div>
 
@@ -52,7 +54,7 @@
                 <button id="add-task-button" class="button" type="submit">Add Task</button>
             </form>
 
-            <dialog id="dialog-menu">
+            <dialog id="close-dialog">
                 <form method="dialog">
                     <p>Discard Task?</p>
                     <div class="modal-buttons">

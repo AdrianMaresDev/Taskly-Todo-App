@@ -95,9 +95,14 @@ h2 {
 }
 
 .task-form {
-    position: relative;
     color: var(--text-accent);
-    padding-top: 2.5rem;
+}
+
+.task-form-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .svg-button {
@@ -105,8 +110,7 @@ h2 {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 0;
-    right: 0;
+    right: 5%;
 }
 
 .task-form-body {
@@ -125,4 +129,26 @@ h2 {
 .form-input {
     margin: 0.5rem 0;
     padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid var(--bg-primary);
+}
+
+.form-input:last-of-type {
+    padding: 2rem;
+}
+
+dialog {
+    margin: auto;
+    border: 2px solid var(--bg-primary);
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+dialog p {
+    font-size: 1.3rem;
 }
