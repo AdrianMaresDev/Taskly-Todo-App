@@ -10,6 +10,7 @@
     --text-primary: #fff;
     --text-accent: #000;
     --bg-white: #fff;
+    --bg-hover: #838dd4;
 }
 
 body{
@@ -36,7 +37,14 @@ ul {
 header {
     background-color: var(--bg-primary);
     padding: 0.5rem 0;
-    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 header div {
@@ -48,18 +56,30 @@ header div {
 
 h1 {
     font-weight: 500;
-    font-size: 2.5rem;
 }
 
 header p {
     font-size: 1.3rem;
-    padding-bottom: 0.5rem;
 }
 
+#theme-button {
+    background-color: var(--bg-white);
+    color: var(--text-accent);
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+}
 
+#theme-button:hover {
+    background-color: var(--bg-accent);
+}
 
 .todo-body {
-    max-width: 70%;
+    max-width: 60%;
     margin: 0 auto;
     margin-top: 5rem;
     background-color: var(--bg-white);
@@ -91,7 +111,7 @@ h2 {
 }
 
 .button:hover {
-    background-color: #838dd4;
+    background-color: var(--bg-hover);
 }
 
 .task-form {
@@ -133,8 +153,8 @@ h2 {
     border: 2px solid var(--bg-primary);
 }
 
-.form-input:last-of-type {
-    padding: 2rem;
+textarea {
+    height: 6rem;
 }
 
 dialog {
