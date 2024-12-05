@@ -19,6 +19,21 @@ themeButton.addEventListener('click', () => {
     dropdownMenu.classList.toggle('hidden');
 });
 
+//Color theme buttons
+const body = document.body;
+const themeList = document.querySelectorAll('#dropdown-menu li');
+
+themeList.forEach(item => {
+    item.addEventListener('click', () => {
+        if (item.id === 'pink') {
+            body.classList.toggle('pink');
+        }
+        dropdownMenu.classList.add('hidden');
+    });
+});
+
+//Task form -->
+
 const taskData = [];
 let currentTask = {};
 

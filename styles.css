@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+/*Default purple*/
+
 :root {
     --bg-primary: #9CA3D6;
     --bg-accent: #D6D7EF;
@@ -12,6 +14,16 @@
     --bg-white: #fff;
     --bg-hover: #838dd4;
 }
+
+/*Theme colors*/
+
+.pink {
+    --bg-primary: #de9bb8;
+    --bg-accent: #F6E6EE;
+    --bg-hover: #DD9BB1;
+}
+
+/*General styles*/
 
 body{
     font-size: 16px;
