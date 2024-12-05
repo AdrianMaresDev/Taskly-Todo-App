@@ -62,7 +62,7 @@ header p {
     font-size: 1.3rem;
 }
 
-#theme-button {
+#theme-button, #dropdown-menu {
     background-color: var(--bg-white);
     color: var(--text-accent);
     font-family: 'Mulish', sans-serif;
@@ -74,7 +74,31 @@ header p {
     transition: background-color 0.3s ease;
 }
 
+#theme-button {
+    position: relative;
+}
+
 #theme-button:hover {
+    background-color: var(--bg-accent);
+}
+
+#dropdown-menu {
+    position: absolute;
+    top: 10%;
+    width: 10rem;
+    text-align: center;
+}
+
+#dropdown-menu li {
+    cursor: pointer;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    margin: 0.2rem 0;
+    transition: background-color 0.3s ease;
+}
+
+#dropdown-menu li:hover {
     background-color: var(--bg-accent);
 }
 

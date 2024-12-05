@@ -12,6 +12,12 @@ const dateInput = document.getElementById('date-input');
 const detailInput = document.getElementById('detail-input');
 const subHeader = document.getElementById('subheader');
 const themeButton = document.getElementById('theme-button');
+const dropdownMenu = document.getElementById('dropdown-menu');
+
+//Dropdown for color themes
+themeButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+});
 
 const taskData = [];
 let currentTask = {};
